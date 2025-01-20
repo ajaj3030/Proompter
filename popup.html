@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Proompter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Proompter</h1>
+    <p class="subtitle">Transform basic prompts into well-crafted ones</p>
+    
+    <div class="provider-section">
+      <label>Select Provider:</label>
+      <div class="provider-buttons">
+        <button class="provider-btn active" data-provider="openai">OpenAI</button>
+        <button class="provider-btn" data-provider="anthropic">Anthropic</button>
+      </div>
+    </div>
+
+    <div class="api-key-section">
+      <label for="apiKey" id="apiKeyLabel">OpenAI API Key:</label>
+      <div class="api-key-input-group">
+        <input type="password" id="apiKey" placeholder="Enter your API key">
+        <button id="saveKey">Save</button>
+      </div>
+      <span class="api-key-help">Your API key is stored locally and never shared</span>
+    </div>
+
+    <div class="prompt-type-selector">
+      <label for="promptType">What are you writing about?</label>
+      <div class="prompt-type-container">
+        <select id="promptType">
+          <option value="coding">Coding</option>
+          <option value="writing">Writing</option>
+          <option value="analysis">Analysis</option>
+          <option value="creative">Creative</option>
+          <option value="business">Business</option>
+        </select>
+        <button id="manageTemplates" class="icon-button">⚙️</button>
+      </div>
+    </div>
+
+    <div class="prompt-input">
+      <label for="userPrompt">Your basic prompt:</label>
+      <textarea id="userPrompt" placeholder="Enter your basic prompt here..."></textarea>
+    </div>
+
+    <button id="enhancePrompt" class="enhance-btn">Enhance Prompt</button>
+
+    <div class="enhanced-prompt">
+      <label for="enhancedPrompt">Enhanced prompt:</label>
+      <textarea id="enhancedPrompt" readonly></textarea>
+      <button id="copyPrompt">Copy to Clipboard</button>
+    </div>
+  </div>
+
+  <!-- Template Management Modal -->
+  <div id="templateModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Manage Templates</h2>
+        <button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="template-list">
+          <!-- Templates will be listed here -->
+        </div>
+        <div class="add-template">
+          <h3>Add New Template</h3>
+          <input type="text" id="templateName" placeholder="Template name">
+          <textarea id="templateContent" placeholder="Enter the system prompt template. Use {prompt} where the user's text should go.
+Example: As a technical writer, enhance this documentation to include: clear structure, examples, prerequisites, and troubleshooting steps. Original text: {prompt}"></textarea>
+          <button id="addTemplate">Add Template</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html> 

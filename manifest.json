@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Proompter",
+  "version": "1.0",
+  "description": "Transform basic prompts into well-crafted, context-aware prompts using AI",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "commands",
+    "clipboardWrite",
+    "clipboardRead",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "commands": {
+    "enhance-selection": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+E",
+        "mac": "Command+Shift+E"
+      },
+      "description": "Enhance selected text"
+    }
+  }
+} 
