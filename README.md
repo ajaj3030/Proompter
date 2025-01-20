@@ -105,6 +105,7 @@ src/
 └── content.js       # Page interaction
 ```
 
+<<<<<<< HEAD
 To modify:
 1. Edit source files
 2. Refresh in `chrome://extensions/`
@@ -123,3 +124,6 @@ Made with ❤️ for better prompting
 [Report Bug](https://github.com/yourusername/proompt/issues) · [Request Feature](https://github.com/yourusername/proompt/issues)
 
 </div> 
+=======
+MIT License - Feel free to modify and distribute as needed. 
+>>>>>>> 2599b27df02d5720b373df1a90c188206f257003
