@@ -1,4 +1,4 @@
-# Proompter - AI Prompt Enhancement Extension
+# Proompt - AI Prompt Enhancement Extension
 
 Proompter is a Chrome extension that helps you create better prompts for AI models. It takes your basic prompts and enhances them with relevant context, requirements, and specifications based on your use case.
 
