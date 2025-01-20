@@ -1,95 +1,125 @@
-# Proompter - AI Prompt Enhancement Extension
+# 🎯 Proompt
 
-Proompter is a Chrome extension that helps you create better prompts for AI models. It takes your basic prompts and enhances them with relevant context, requirements, and specifications based on your use case.
+<div align="center">
 
-## Features
+Transform your basic prompts into masterpieces with AI-powered enhancement.
 
-- 🚀 One-click prompt enhancement
-- ⌨️ Keyboard shortcut (Ctrl+Shift+E or Cmd+Shift+E)
-- 🔄 Support for both OpenAI and Anthropic models
-- 📝 Multiple prompt templates for different use cases:
-  - Coding
-  - Writing
-  - Analysis
-  - Creative
-  - Business
-- ✨ Custom template creation
-- 🔒 Secure local API key storage
+[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-blue.svg?style=for-the-badge&logo=google-chrome&logoColor=white)](chrome://extensions/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-412991.svg?style=for-the-badge&logo=openai&logoColor=white)](https://platform.openai.com)
+[![Anthropic](https://img.shields.io/badge/Anthropic-Claude%203-6B48FF.svg?style=for-the-badge)](https://anthropic.com)
 
-## Installation
+</div>
 
-1. Clone this repository or download the source code
-2. Open Chrome and go to `chrome://extensions/`
-3. Enable "Developer mode" in the top right
-4. Click "Load unpacked" and select the project folder
+---
 
-## Setup
+## ✨ Features
 
-1. Click the Proompter icon in your Chrome toolbar
-2. Select your preferred AI provider (OpenAI or Anthropic)
-3. Enter your API key and click "Save"
-4. Choose a prompt type or create your own custom template
+<div align="center">
 
-## Usage
+| Feature | Description |
+|---------|-------------|
+| 🚀 **Quick Enhancement** | Transform any text with a single shortcut |
+| ⌨️ **Universal Shortcut** | `Ctrl+Shift+E` (Windows) / `Cmd+Shift+E` (Mac) |
+| 🎭 **Multiple Modes** | Specialized templates for different use cases |
+| 🎨 **Custom Templates** | Create your own enhancement templates |
+| 🔒 **Secure** | Local API key storage, direct API communication |
 
-### Method 1: Keyboard Shortcut
-1. Select any text you want to enhance
-2. Press `Ctrl+Shift+E` (Windows/Linux) or `Cmd+Shift+E` (Mac)
-3. The enhanced prompt will be automatically copied to your clipboard
+</div>
 
-### Method 2: Extension Popup
-1. Click the Proompter icon in your toolbar
-2. Select the type of prompt you're writing
-3. Enter your basic prompt
-4. Click "Enhance Prompt"
-5. Copy the enhanced result
+## 🎯 Use Cases
 
-## Creating Custom Templates
+- **💻 Coding**: Add language requirements, performance considerations, and technical constraints
+- **✍️ Writing**: Specify tone, audience, length, and style preferences
+- **📊 Analysis**: Include metrics, data formats, and visualization preferences
+- **🎨 Creative**: Define style guidelines, mood, and technical specifications
+- **💼 Business**: Add industry context, metrics, and stakeholder considerations
 
-1. Click the ⚙️ icon next to the prompt type selector
-2. Enter a name for your template
-3. Write your template using `{prompt}` where you want the user's text to go
-4. Click "Add Template"
+## 🚀 Quick Start
 
-Example template:
-```
-As a technical writer, enhance this documentation to include: clear structure, examples, prerequisites, and troubleshooting steps. Original text: {prompt}
+### Installation
+```bash
+1. Clone repository or download source
+2. Open Chrome → chrome://extensions/
+3. Enable "Developer mode" → Load unpacked
+4. Select the Proompt folder
 ```
 
-## Supported Models
+### Setup
+1. Click the Proompt icon 🎯
+2. Choose your AI provider:
+   - 🤖 OpenAI (GPT-4o)
+   - 🧠 Anthropic (Claude 3)
+3. Enter your API key
+4. Start enhancing!
 
-- OpenAI: GPT-4o
-- Anthropic: Claude 3 Sonnet
+## 💫 Usage
 
-## API Keys
+### ⚡ Keyboard Shortcut Method
+```
+1. Select text anywhere
+2. Press Ctrl+Shift+E (or Cmd+Shift+E)
+3. Enhanced prompt → clipboard instantly!
+```
 
-- OpenAI API key: Get from [OpenAI Platform](https://platform.openai.com/api-keys)
-- Anthropic API key: Get from [Anthropic Console](https://console.anthropic.com/)
+### 🖱️ Extension Popup Method
+```
+1. Click Proompt icon
+2. Choose template type
+3. Enter prompt
+4. Click Enhance
+5. Copy result
+```
 
-Your API keys are stored locally in your browser and are never sent to any server other than the respective AI providers.
+## 🎨 Custom Templates
 
-## Privacy & Security
+Create your own enhancement templates with our intuitive system:
 
-- All processing is done through official OpenAI/Anthropic APIs
-- API keys are stored locally using Chrome's secure storage
-- No data is collected or sent to any third-party servers
-- The extension only requires minimal permissions necessary for functionality
+```javascript
+// Example Template
+As a UX researcher, enhance this prompt to include: 
+- Target user demographics
+- Research objectives
+- Methodology preferences
+- Expected insights
+- Success metrics
 
-## Development
+Original text: {prompt}
+```
 
-The extension is built using vanilla JavaScript and Chrome Extension APIs. To modify:
+## 🔐 Security & Privacy
 
-1. Edit the source files:
-   - `manifest.json`: Extension configuration
-   - `popup.html/css/js`: UI and interaction
-   - `background.js`: Core functionality
-   - `content.js`: Page interaction
+```plaintext
+✓ Local API key storage
+✓ Direct API communication
+✓ No third-party servers
+✓ Minimal permissions
+```
 
-2. Test changes:
-   - Go to `chrome://extensions/`
-   - Click the refresh icon on the extension card
-   - Or reload the unpacked extension
+## 🛠️ Development
 
-## License
+```plaintext
+src/
+├── manifest.json     # Extension config
+├── popup/           # UI components
+├── background.js    # Core functionality
+└── content.js       # Page interaction
+```
 
-MIT License - Feel free to modify and distribute as needed. 
+To modify:
+1. Edit source files
+2. Refresh in `chrome://extensions/`
+3. Test changes
+
+## 📜 License
+
+MIT License © 2024 - Feel free to modify and share!
+
+---
+
+<div align="center">
+
+Made with ❤️ for better prompting
+
+[Report Bug](https://github.com/yourusername/proompt/issues) · [Request Feature](https://github.com/yourusername/proompt/issues)
+
+</div> 

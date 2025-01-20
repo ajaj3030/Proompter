@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Proompter",
+  "name": "Proompt",
   "version": "1.0",
   "description": "Transform basic prompts into well-crafted, context-aware prompts using AI",
   "permissions": [
